@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b6pptnu33ueld"]
+
+[ext_resource type="Script" uid="uid://djkpbxbwjfhcu" path="res://system/grid_map_system/grid_map_manager.gd" id="1_3acdw"]
+[ext_resource type="Texture2D" uid="uid://biofrwdd3ykjs" path="res://assets/test_terrain/spr_custom_gen_tileset.png" id="2_klgqe"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mntuk"]
+texture = ExtResource("2_klgqe")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_3acdw"]
+custom_data_layer_0/name = "terrain_type"
+custom_data_layer_0/type = 22
+sources/1 = SubResource("TileSetAtlasSource_mntuk")
+
+[node name="GridMap" type="Node2D" unique_id=297495858]
+script = ExtResource("1_3acdw")
+tile_size = Vector2i(16, 16)
+
+[node name="TileMapLayerGround" type="TileMapLayer" parent="." unique_id=1287171782]
+tile_set = SubResource("TileSet_3acdw")
+
+[node name="TileMapLayerNatural" type="TileMapLayer" parent="." unique_id=146577246]
+
+[node name="TileMapLayerStructure" type="TileMapLayer" parent="." unique_id=1876062418]

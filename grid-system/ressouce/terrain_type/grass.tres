@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TerrainType" format=3 uid="uid://b1348dko4kxnx"]
+
+[ext_resource type="Script" uid="uid://dgstknqkwhdp0" path="res://ressouce/terrain_type.gd" id="1_k6mn7"]
+[ext_resource type="Texture2D" uid="uid://yfjdn7iwxkk4" path="res://assets/test_terrain/Sprite-0003.png" id="2_i7h6v"]
+
+[resource]
+script = ExtResource("1_k6mn7")
+display_name = "Grass"
+is_buildable = true
+texture = ExtResource("2_i7h6v")
+metadata/_custom_type_script = "uid://dgstknqkwhdp0"
